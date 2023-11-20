@@ -202,8 +202,9 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 16px;
     margin-top: 20px;
-    display: inline-block;
     font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .brochure:hover{
