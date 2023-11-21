@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Alice','Playfair Display';
     box-sizing: border-box;
 }
 
@@ -10,6 +9,7 @@ html{
 }
 
 body{
+    font-family: 'Alice';
     background: #FFF4EC;
     color: #0E1428; 
 }
@@ -20,10 +20,20 @@ body{
     background-image: url(images/background.png);
     background-size: cover;
     background-position: center;
+    font-family: 'Playfair Display';
+}
+
+p{
+    font-family: 'Playfair Display';
+    font-weight: 600;
 }
 
 .container{
     padding: 50px;
+}
+
+.about-me{
+    background-color: #d9d9d9;
 }
 
 nav{
@@ -79,6 +89,10 @@ nav ul li a:hover::after{
 .intro{
     font-size: 18px;
     margin-top: 10px;
+}
+
+.header-color{
+    background-color: #FFF4EC;
 }
 
 /* about */
@@ -163,6 +177,7 @@ nav ul li a:hover::after{
 
 .tab-contents{
     display: none;
+    font-weight: 600;
 }
 
 .tab-contents.active-tab{
@@ -171,7 +186,7 @@ nav ul li a:hover::after{
 
 /* portfolio */
 
-#services{
+#portfolio{
     padding: 30px 0;
 }
 
@@ -207,10 +222,181 @@ nav ul li a:hover::after{
     justify-content: flex-end;
 }
 
+.brochure{
+    background-image: url(images/brochure.png);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: 'Playfair Display';
+}
+
 .brochure:hover{
     transform: translateY(-10px);
     background-image: url(images/brochure.png);
 }
+
+.sop{
+    background-image: url(images/SOP-background.PNG);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: 'Playfair Display';
+    
+}
+
+.sop:hover{
+    transform: translateY(-10px);
+    background-image: url(images/SOP-background.PNG);
+}
+
+.kb-article{
+    background-image: url(images/kb-background.PNG);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: 'Playfair Display';
+}
+
+.kb-article:hover{
+    transform: translateY(-10px);
+    background-image: url(images/kb-background.PNG);
+}
+
+.project-details{
+    width: 80%;
+    max-width: 960px;
+    object-fit: fill;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    color: #0E1428;
+    font-family: 'Playfair Display';
+}
+
+.project-name{
+    padding-top: 30px;
+    font-size: 60px;
+    padding-bottom: 10px;
+}
+
+.project-subtitle{
+    font-size: 18px;
+    padding-bottom: 15px;
+    color: #545454;
+}
+
+.brochure-img{
+    max-width: 100%;
+    padding-bottom: 15px;
+}
+
+.button{
+    border-radius: 20px;
+    padding: 12px 28px;
+    font-size: 18px;
+    background-color: #0E1428;
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-weight: bold;
+    border: 0;
+}
+
+.button:hover{
+    background-color: #966B9D;
+    cursor: pointer;
+    border: 0;
+}
+
+.project-text{
+    padding-top: 20px;
+    width: 80%;
+    max-width: 960px;
+    object-fit: fill;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 150px;
+}
+
+.footer-wrap{
+    background-color: #d9d9d9;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-brands.fa-linkedin{
+    color: #0E1428;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.kb-details{
+    background-color: white;
+    /* fix font */
+    font-family: 'Roboto' !important;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 960px;
+    object-fit: fill;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.note{
+    font-family: 'Roboto' !important;
+    background-color: #966B9D;
+    padding: 10px;
+    color: white;
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+.kb-text{
+    font-family: 'Roboto';
+}
+
+.kb-title{
+    font-family: 'Roboto';
+}
+
+.feedback{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fa-thumbs-up{
+    padding: 10px;
+    font-size: 20px;
+    color: grey;
+}
+
+.fa-thumbs-up:hover{
+    padding: 10px;
+    font-size: 20px;
+    color: green;
+    cursor: pointer;
+}
+
+.fa-thumbs-down{
+    padding: 10px;
+    font-size: 20px;
+    color: grey;
+}
+
+.fa-thumbs-down:hover{
+    padding: 10px;
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}
+
 
 /* css for small screen */
 
