@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href='https://fonts.googleapis.com/css?family=Alice|Playfair Display' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alice|Playfair Display|Roboto' rel='stylesheet'>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olivia Papotto</title>
+    <link rel="icon" href="images/logo.ico">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/934634d926.js" crossorigin="anonymous"></script>
 </head>
@@ -15,7 +16,7 @@
             <img src="images/logo.svg" class="logo">
             <ul id="sidemenu">
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#services">Portfolio</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -24,7 +25,7 @@
         <div class="header-text">
             <!--<p>Techical Writer</p>-->
             <h1>Hi, I'm Olivia Papotto</h1>
-            <p class="intro">I am a technical designer looking to...</p>
+            <p class="intro">I am an aspiring technical writer looking to help meet your needs</p>
         </div>
     </div>
 </div>
@@ -32,7 +33,7 @@
 <!-- about -->
 
 <div id="about">
-    <div class="container">
+    <div class="container about-me">
         <div class="row">
             <div class="about-col-1">
                 <img src="images/user.png">
@@ -70,8 +71,8 @@
                 <div class="tab-contents" id="education">
                     <ul>
                         <li><span>Clemson University</span><br>December 2021</li>
-                        <li><span>Bachelor of Science</span><br>Computer Information Systems</li>
-                        <li><span>Minor</span><br>Cybersecurity</li>
+                        <li><span>Bachelor of Science / Minor</span><br>Computer Information Systems / Cybersecurity</li>
+                        <li><span>Relevant Coursework</span><br>Technical Writing, Inclusive Design & Access to Technology, Data Visualization, Business Analysis, Problem Solving w/ Office Apps</li>
                     </ul>
                 </div>
             </div>
@@ -81,26 +82,36 @@
 
 <!-- portfolio -->
 
-<div id="services">
+<div id="portfolio">
     <div class="container">
         <h1 class="subtitle">Portfolio</h1>
         <div class="services-list">
             <div class="brochure">
                 <h2>Clemson Brochure</h2>
                 <p>A brochure to detail the wonders and experiences of Clemson, SC.</p>
-                <a href="#">Learn More ></a>
+                <a href="brochure.html">Learn More ></a>
             </div>
-            <div>
-                <h2>Web Design</h2>
-                <p>project 1 description blah blah blah</p>
-                <a href="#">Learn More ></a>
+            <div class="sop">
+                <h2>SOP Document</h2>
+                <p>A sample Standard Operating Procedure document detailing the hiring process of ficticious Cat Corporation.</p>
+                <a href="sop.html">Learn More ></a>
             </div>
-            <div>
-                <h2>Web Design</h2>
-                <p>project 1 description blah blah blah</p>
-                <a href="#">Learn More ></a>
+            <div class="kb-article">
+                <h2>Knowledge Base Article</h2>
+                <p>A knowledge base article for a telecommunications company detailing how to merge phone calls.</p>
+                <a href="kb-article.html">Learn More ></a>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="footer-wrap">
+    <div class="footer-links">
+        <a href="https://www.linkedin.com/in/olivia-papotto/" target="_blank" class="social-icons">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <br>
+        <p>Made by Olivia Papotto - 2023</p>
     </div>
 </div>
 
